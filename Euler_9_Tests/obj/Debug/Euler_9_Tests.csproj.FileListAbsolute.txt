@@ -1,0 +1,12 @@
+D:\dev\MarksPlayground\Euler_9_Tests\obj\Debug\Euler_9_Tests.csprojResolveAssemblyReference.cache
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\Euler_9_Tests.dll
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\Euler_9_Tests.pdb
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\FluentAssertions.dll
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\NSubstitute.dll
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\nunit.framework.dll
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\FluentAssertions.pdb
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\FluentAssertions.xml
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\NSubstitute.xml
+D:\dev\MarksPlayground\Euler_9_Tests\bin\Debug\nunit.framework.xml
+D:\dev\MarksPlayground\Euler_9_Tests\obj\Debug\Euler_9_Tests.dll
+D:\dev\MarksPlayground\Euler_9_Tests\obj\Debug\Euler_9_Tests.pdb

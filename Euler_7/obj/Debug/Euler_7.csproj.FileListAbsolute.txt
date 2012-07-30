@@ -1,0 +1,9 @@
+D:\dev\MarksPlayground\Euler_7\bin\Debug\Euler_7.dll
+D:\dev\MarksPlayground\Euler_7\bin\Debug\Euler_7.pdb
+D:\dev\MarksPlayground\Euler_7\bin\Debug\FluentAssertions.dll
+D:\dev\MarksPlayground\Euler_7\bin\Debug\nunit.framework.dll
+D:\dev\MarksPlayground\Euler_7\bin\Debug\FluentAssertions.pdb
+D:\dev\MarksPlayground\Euler_7\bin\Debug\FluentAssertions.xml
+D:\dev\MarksPlayground\Euler_7\bin\Debug\nunit.framework.xml
+D:\dev\MarksPlayground\Euler_7\obj\Debug\Euler_7.dll
+D:\dev\MarksPlayground\Euler_7\obj\Debug\Euler_7.pdb

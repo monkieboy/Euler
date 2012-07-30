@@ -1,0 +1,9 @@
+D:\dev\MarksPlayground\Euler_8\bin\Debug\Euler_8.dll
+D:\dev\MarksPlayground\Euler_8\bin\Debug\Euler_8.pdb
+D:\dev\MarksPlayground\Euler_8\bin\Debug\FluentAssertions.dll
+D:\dev\MarksPlayground\Euler_8\bin\Debug\nunit.framework.dll
+D:\dev\MarksPlayground\Euler_8\bin\Debug\FluentAssertions.pdb
+D:\dev\MarksPlayground\Euler_8\bin\Debug\FluentAssertions.xml
+D:\dev\MarksPlayground\Euler_8\bin\Debug\nunit.framework.xml
+D:\dev\MarksPlayground\Euler_8\obj\Debug\Euler_8.dll
+D:\dev\MarksPlayground\Euler_8\obj\Debug\Euler_8.pdb

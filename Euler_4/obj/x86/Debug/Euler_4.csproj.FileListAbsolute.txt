@@ -1,0 +1,5 @@
+D:\dev\MarksPlayground\Euler_4\bin\Debug\Euler_4.exe
+D:\dev\MarksPlayground\Euler_4\bin\Debug\Euler_4.pdb
+D:\dev\MarksPlayground\Euler_4\obj\x86\Debug\Euler_4.exe
+D:\dev\MarksPlayground\Euler_4\obj\x86\Debug\Euler_4.pdb
+D:\dev\MarksPlayground\Euler_4\obj\x86\Debug\Euler_4.csprojResolveAssemblyReference.cache

@@ -1,0 +1,7 @@
+D:\dev\MarksPlayground\Euler_11_Test\bin\Debug\Euler_11_Test.dll
+D:\dev\MarksPlayground\Euler_11_Test\bin\Debug\Euler_11_Test.pdb
+D:\dev\MarksPlayground\Euler_11_Test\bin\Debug\nunit.framework.dll
+D:\dev\MarksPlayground\Euler_11_Test\bin\Debug\nunit.framework.xml
+D:\dev\MarksPlayground\Euler_11_Test\obj\Debug\Euler_11_Test.dll
+D:\dev\MarksPlayground\Euler_11_Test\obj\Debug\Euler_11_Test.pdb
+D:\dev\MarksPlayground\Euler_11_Test\obj\Debug\Euler_11_Test.csprojResolveAssemblyReference.cache

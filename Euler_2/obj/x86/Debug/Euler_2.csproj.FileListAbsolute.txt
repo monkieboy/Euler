@@ -1,0 +1,4 @@
+D:\dev\MarksPlayground\Euler_2\bin\Debug\Euler_2.exe
+D:\dev\MarksPlayground\Euler_2\bin\Debug\Euler_2.pdb
+D:\dev\MarksPlayground\Euler_2\obj\x86\Debug\Euler_2.exe
+D:\dev\MarksPlayground\Euler_2\obj\x86\Debug\Euler_2.pdb
