@@ -1,0 +1,10 @@
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\Euler_15.dll
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\Euler_15.pdb
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\FluentAssertions.dll
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\nunit.framework.dll
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\FluentAssertions.pdb
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\FluentAssertions.xml
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\bin\Debug\nunit.framework.xml
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\obj\Debug\Euler_15.csprojResolveAssemblyReference.cache
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\obj\Debug\Euler_15.dll
+D:\dev\MarksPlayground\Euler\Euler_15\Euler_15\obj\Debug\Euler_15.pdb

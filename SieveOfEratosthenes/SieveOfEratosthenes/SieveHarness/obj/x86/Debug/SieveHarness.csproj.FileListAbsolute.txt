@@ -1,0 +1,7 @@
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\bin\Debug\SieveHarness.exe
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\bin\Debug\SieveHarness.pdb
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\bin\Debug\SieveOfEratosthenes.dll
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\bin\Debug\SieveOfEratosthenes.pdb
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\obj\x86\Debug\SieveHarness.csprojResolveAssemblyReference.cache
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\obj\x86\Debug\SieveHarness.exe
+D:\dev\MarksPlayground\SieveOfEratosthenes\SieveOfEratosthenes\SieveHarness\obj\x86\Debug\SieveHarness.pdb

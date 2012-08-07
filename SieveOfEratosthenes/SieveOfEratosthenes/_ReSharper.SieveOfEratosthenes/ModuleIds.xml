@@ -1,0 +1,5 @@
+<Modules>
+  <Module PersistentId="F247F6AF-F4A4-47D4-A4ED-F88106CCC0FE" ModuleId="SieveOfEratosthenes" />
+  <Module PersistentId="D233F5EA-0FC1-47FA-9260-5894EE0319C8" ModuleId="Tests" />
+  <Module PersistentId="9D73A240-A7A4-4B55-ADB6-8041C81D204C" ModuleId="SieveHarness" />
+</Modules>
