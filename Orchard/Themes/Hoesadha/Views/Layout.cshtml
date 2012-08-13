@@ -1,0 +1,95 @@
+﻿@{
+    Style.Include("Site.css");
+    Style.Include("style.css");
+    Script.Include("adapt.min.js").AtHead();
+    Script.Include("jquery.min.js").AtHead();
+    Script.Include("supersized.3.2.7.min.js").AtHead();
+    Script.Include("jquery.countdown.min.js").AtHead();
+    Script.Include("jquery.tweetcycle.js").AtHead();
+    Script.Include("jquery.tipsy.js").AtHead();
+    Script.Include("jquery.color.js").AtHead();
+    Script.Include("jquery.custom.js").AtHead();
+    Script.Include("adapt.min.js").AtHead();
+    Script.Include("adapt.min.js").AtHead();
+    Script.Include("adapt.min.js").AtHead();
+
+}
+<noscript>
+    @{
+        Style.Include("mobile.css");
+    }
+</noscript>
+
+<script type="text/javascript">
+    $(window).resize(function () {
+        boxHeight();
+    }).ready(function($){
+        // Tweet
+        $("#twitter").tweetcycle({ username: "zourbuth", count: 4 });
+        // Countdown
+        $('#countdown').countdown({
+            until: new Date("12/27/2012 09:00"),
+            format: "DHMS",
+            labels: ['years', 'months', 'weeks', 'days', 'hours', 'minutes', 'seconds'],
+            labels1: ['year', 'month', 'week', 'day', 'hour', 'minute', 'second'],
+            layout: '<div class="count day">{dn}<span>{dl}</span></div>'+
+                    '<div class="count hour">{hn}<span>{hl}</span></div>'+
+                    '<div class="count minute">{mn}<span>{ml}</span></div>'+						
+                    '<div class="count second">{sn}<span>{sl}</span></div>'+
+                    '<div class="clear"></div>'
+        });
+    
+        $.supersized({
+            // Functionality
+            slide_interval          :   3000,		// Length between transitions
+            transition              :   1, 			// 0-None, 1-Fade, 2-Slide Top, 3-Slide Right, 4-Slide Bottom, 5-Slide Left, 6-Carousel Right, 7-Carousel Left
+            transition_speed		:	700,		// Speed of transition
+    
+            // Components							
+            slide_links				:	'blank',	// Individual links for each slide (Options: false, 'num', 'name', 'blank')
+            slides 					:  	[			// Slideshow Images
+                                                {image : 'Themes/Hoesadha/Content/1.jpg'},
+                                                {image : 'Themes/Hoesadha/Content/2.jpg'},  
+                                                {image : 'Themes/Hoesadha/Content/3.jpg'}
+                                        ]
+        });			
+    });
+</script>
+<div id="Navigation" class="Navigation">
+    @Display(Model.Navigation)
+</div>
+<div id="overlay"></div>
+<div id="wrapper">
+    <!-- Socials -->
+    <div id="socials">
+        <ul>
+            <li><a class="icon digg" href="#" title="Digg">&nbsp;</a></li>
+            <li><a class="icon share" href="#" title="Share This">&nbsp;</a></li>
+            <li><a class="icon flickr" href="#" title="Flickr">&nbsp;</a></li>
+            <li><a class="icon dribble" href="#" title="Dribble">&nbsp;</a></li>
+            <li><a class="icon forrst" href="#" title="Forrst">&nbsp;</a></li>
+            <li><a class="icon google" href="#" title="Google+">&nbsp;</a></li>
+            <li><a class="icon rss" href="#" title="Rss">&nbsp;</a></li>
+            <li><a class="icon vimeo" href="#" title="Vimeo">&nbsp;</a></li>
+            <li><a class="icon twitter" href="#" title="Twitter">&nbsp;</a></li>
+            <li><a class="icon facebook" href="#" title="Facebook">&nbsp;</a></li>
+        </ul>
+    </div>
+
+    <div id="content">
+        <div class="container_12">
+            <div class="grid_12">
+                <div id="logo" class="logo">
+                    <!-- Logo -->
+                    <a href="#">@Display(Model.logo)</a>
+                </div>
+            </div>
+            <div class="clear"></div>
+            @Display(Model.Content)
+        </div>
+    </div>
+    <!-- Tweet -->
+    <div id="twitter"></div>
+
+</div>
+

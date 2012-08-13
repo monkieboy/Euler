@@ -1,0 +1,12 @@
+body {
+}
+
+div.metadata {
+    display: none;
+    visibility: hidden;
+}
+
+article header {
+    display: none;
+    visibility: hidden;
+}
