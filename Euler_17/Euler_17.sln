@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euler_17", "Euler_17.csproj", "{C96AF830-BADE-43F4-82E5-FC56D16FA649}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Euler_17_tests", "..\Euler_17_tests\Euler_17_tests.csproj", "{CE9FAF2C-A71E-43D1-B232-508BE9A35658}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C96AF830-BADE-43F4-82E5-FC56D16FA649}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96AF830-BADE-43F4-82E5-FC56D16FA649}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96AF830-BADE-43F4-82E5-FC56D16FA649}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96AF830-BADE-43F4-82E5-FC56D16FA649}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CE9FAF2C-A71E-43D1-B232-508BE9A35658}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CE9FAF2C-A71E-43D1-B232-508BE9A35658}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CE9FAF2C-A71E-43D1-B232-508BE9A35658}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CE9FAF2C-A71E-43D1-B232-508BE9A35658}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
