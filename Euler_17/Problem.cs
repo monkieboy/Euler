@@ -1,26 +1,27 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 
 namespace Euler_17
 {
-    public class Problem
-    {
-        public string GetWordForNumber(int number)
-        {
-            return Change.ToString(number);
-        }
-    }
+	public class Problem
+	{
+		public string GetWordForNumber(int number)
+		{
+			return Change.ToString(number);
+		}
+	}
 
-    public class Change
-    {
-        public static string ToString(int number)
-        {
-            return number.Convert();
-        }
-    }
+	public class Change
+	{
+		public static string ToString(int number)
+		{
+			return number.Convert();
+		}
+	}
 
-    public static class ChangeExtensions
-    {
-        private static readonly Dictionary<int, string> NumberWords = new Dictionary<int, string>
+	public static class ChangeExtensions
+	{
+		private static readonly Dictionary<int, string> NumberWords = new Dictionary<int, string>
                                                                  {
                                                                      {1, "one "},
                                                                      {2, "two "},
@@ -53,54 +54,77 @@ namespace Euler_17
                                                                      {1000, "thousand "},
                                                                  };
 
-        public static string Convert(this int number)
-        {
-            string result = string.Empty;
-            int iteration = 0;
-            while (number >= 1)
-            {
-                //Figure out the current number
+		public static string Convert(this int number)
+		{
+			if (number == 0)
+			{
+				return "zero";
+			}
 
-                // 16/5 = 3 r 1
-                var tenth = number % 10;
-                number /= 10;
-                if (tenth != 0)
-                {
-                    if (iteration == 1)
-                    {
-                        result = NumberWords[tenth * 10] + result;
-                    }
-                    else
-                    {
-                if (iteration == 3 && tenth > 0 && !result.Contains("and"))
-                {
-                    result = "thousand and " + result;
-                }
-                else if (iteration == 3 && tenth == 0 && !result.Contains("and"))
-                {
-                    result = "and " + result;
-                }
-                else if (iteration == 3 && tenth > 0 && result.Contains("and"))
-                {
-                    result = "thousand " + result;
-                }
-                if (iteration == 2 && tenth > 0)
-                {
-                    result = "hundred and " + result;
-                }
-                else if (iteration == 2 && tenth == 0)
-                {
-                    result = "and " + result;
-                }
-                        result = NumberWords[tenth] + result;
-                    }
-                }
+			string result = string.Empty;
+			int iteration = 0;
+			while (number >= 1)
+			{
+				//Figure out the current number
 
-                //if (iteration)
+				// 16/5 = 3 r 1
+				var tenth = number % 10;
+				number /= 10;
+				if (tenth != 0)
+				{
+					if (iteration == 1 && tenth > 1)
+					{
+						result = NumberWords[tenth * 10] + result;
+					}
+					else if (iteration == 1 && tenth <= 1)
+					{
+						var numberWord = result.Length > 0
+							? NumberWords[tenth * 10 + NumberWords.Keys.ToArray().Select(x => x).Single(x => NumberWords[x] == result)]
+							: "ten";
+						result = numberWord;
+					}
+					else
+					{
+						result = Result(iteration, tenth, result);
+					}
+				}
 
-                iteration++;
-            }
-            return result.TrimEnd(new[] { ' ' });
-        }
-    }
+				//if (iteration)
+
+				iteration++;
+			}
+			return result.TrimEnd(new[] { ' ' });
+		}
+
+		private static string Result(int iteration, int tenth, string result)
+		{
+			if (iteration == 3 && tenth > 0 && result.Length > 0)
+			{
+				result = "thousand and " + result;
+			}
+			else if (iteration == 3 && tenth == 0 && result.Length > 0)
+			{
+				result = "and " + result;
+			}
+			else if (iteration == 3 && tenth != 0)
+			{
+				result = "thousand " + result;
+			}
+
+			if (iteration == 2 && tenth > 0 && result.Length > 0)
+			{
+				result = "hundred and " + result;
+			}
+			else if (iteration == 2 && tenth == 0)
+			{
+				result = "and " + result;
+			}
+			else if (iteration == 2 && tenth != 0)
+			{
+				result = "hundred " + result;
+			}
+			result = NumberWords[tenth] + result;
+			return result;
+		}
+	}
 }
