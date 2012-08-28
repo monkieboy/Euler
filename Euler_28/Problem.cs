@@ -1,43 +1,83 @@
-﻿using System;
+﻿using System.Numerics;
 
 namespace Euler_28
 {
     public class Problem
     {
-        public int EvaluateGrid(int gridSize)
+        public BigInteger EvaluateGrid(long gridSize)
         {
-            var negativeXy = CalculateNegativeXY(gridSize);
-            var positiveXy = CalculatePositiveXY(gridSize);
-            return negativeXy+positiveXy;
+            return Evaluate(gridSize);
         }
 
-        private int CalculatePositiveXY(int gridSize)
+        private BigInteger Evaluate(long gridSize)
         {
-            var result = 0D;
-            for (int i = 1; i < gridSize; i += 2)
+            var positiveXy = CalculateSquares(gridSize);
+            var negativeXy = CalculateDiagonal(gridSize, Direction.BottomLeft);
+            var positiveXNegativeY = CalculateDiagonal(gridSize, Direction.BottomRight);
+            var negativeXPositiveY = CalculateDiagonal(gridSize, Direction.TopLeft);
+
+            return negativeXy + positiveXy + negativeXPositiveY + positiveXNegativeY;
+        }
+
+        private BigInteger CalculateSquares(long gridSize)
+        {
+            var result = new BigInteger(0);
+            for (var i = 1; i < gridSize; i += 2)
             {
-                result += Math.Pow(i + 2, 2);
+                result += BigInteger.Pow(i + 2, 2);
             }
-            return (int)result;
+            return result;
         }
 
-        private static int CalculateNegativeXY(int gridSize)
+        private BigInteger CalculateDiagonal(long gridSize, Direction direction)
         {
-            var current = 5;
-            var next = 0;
-            var result = 6;
-            var temp = 12;
+            var current = 0;
+            var temp = 0;
+            var seed = 0;
+            switch (direction)
+            {
+                case Direction.BottomRight:
+                    current = 3;
+                    temp = 10;
+                    seed = 3;
+                    break;
+                case Direction.BottomLeft:
+                    current = 5;
+                    temp = 12;
+                    seed = 6;
+                    break;
+                case Direction.TopLeft:
+                    current = 7;
+                    temp = 14;
+                    seed = 7;
+                    break;
+            }
+
+            var result = CalculateResult(gridSize, temp, seed, current);
+
+            return result;
+        }
+
+        private BigInteger CalculateResult(long gridSize, BigInteger temp, BigInteger seed, BigInteger current)
+        {
             for (var i = 1; i < gridSize/2; i++)
             {
-                next = current + temp;
+                var next = current + temp;
 
                 temp += 8;
 
                 current = next;
 
-                result += current;
+                seed += current;
             }
-            return result;
+            return seed;
         }
+    }
+
+    public enum Direction
+    {
+        BottomRight = 3,
+        BottomLeft = 5,
+        TopLeft = 7
     }
 }
