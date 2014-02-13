@@ -16,7 +16,8 @@ namespace EulerProblem59.App
                                               .ReadAllText(@"C:\dev\Kata\Euler\EulerProblem59.App\cipher1.txt")
                                               .Split(new[] {","}, StringSplitOptions.None)
                                               .Select(x => Convert.ToString((char)Convert.ToInt32(x))));
-            bool matchFound = false;
+            var matchFound = false;
+
             for (var i = a; i < z; i++)
             {
                 for (var j = a; j < z; j++)
@@ -34,6 +35,8 @@ namespace EulerProblem59.App
                     }
                 }
             }
+
+
             Console.WriteLine(matchFound ? "Finished." : "No match found.");
             Console.ReadKey();
         }

@@ -31,11 +31,8 @@ namespace EulerProblem59.Tests
         {
             const string statement = "The quick brown fox";
             var stripe = new[] {'a', 'b', 'c'};
-            var encrypted = encryptor.Encrypt(statement, stripe);
 
-            Assert.That(encrypted, Is.EqualTo("5\nA\b\bA\0\rA\f"));
-
-            var decrypted = encryptor.Decrypt(encrypted, stripe);
+            var decrypted = encryptor.Decrypt(encryptor.Encrypt(statement, stripe), stripe);
 
             Assert.AreEqual(decrypted, statement);
         }

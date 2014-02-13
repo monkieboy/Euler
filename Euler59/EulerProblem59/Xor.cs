@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 namespace EulerProblem59
@@ -43,8 +42,7 @@ namespace EulerProblem59
                 var modulo = (i + 1) % stripeLength;
                 index = (modulo == 0 ? stripeLength : modulo)-1;
             }
-            var c = stripe[index];
-            return c;
+            return stripe[index];
         }
     }
 }
